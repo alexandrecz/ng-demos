@@ -27,10 +27,12 @@
             $win.scroll(toggleIcon);
 
             element.find('a').click(function(e) {
-                e.preventDefault();
+                //e.preventDefault();
                 // Learning Point: $anchorScroll works, but no animation
                 //$anchorScroll();
-                $('body').animate({scrollTop: 0}, 500);
+                //$('body').animate({scrollTop: 0}, 500);
+                 $("html, body").animate({ scrollTop: 0 }, 500);
+                    return false;
             });
 
             function toggleIcon() {
